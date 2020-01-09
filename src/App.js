@@ -1,25 +1,38 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
+import React, { useEffect } from "react";
+import "./App.css";
+import Layout from "./components/Layout/Layout";
+import HomePage from "./components/Home/Home";
+import AboutMe from "./components/About/About";
+import Contact from "./components/Contact/Contact";
+import Portfolio from "./components/Portfolio/Portfolio";
+import Resume from "./components/Resume/Resume";
+import AOS from "aos";
+import { Route, Switch, BrowserRouter } from "react-router-dom";
 function App() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1200
+    });
+
+  })
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <React.Fragment>
+      <div class="">
+        <BrowserRouter>
+          <Layout>
+            <Switch>
+              <Route exact path="/home" render={props => <HomePage />} />
+              <Route exact path="/about" render={props => <AboutMe />} />
+              <Route exact path="/resume" render={props => <Resume />} />
+              <Route exact path="/portfolio" render={props => <Portfolio />} />
+              <Route exact path="/contact" render={props => <Contact />} />
+            </Switch>
+          </Layout>
+        </BrowserRouter>
+      </div>
+    </React.Fragment>
   );
 }
 
