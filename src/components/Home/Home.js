@@ -4,9 +4,9 @@ import "./Home.css";
 function Home() {
   return (
     <React.Fragment>
-      <section data-aos="fade-down"
+      <section  data-aos="fade-right"
         id="home"
-        class="banner-section ml-auto col pt-page page-active"
+        className="banner-section   pt-page page-active"
         data-simplebar="init"
       >
         <div className="text-center home-text text-white">
@@ -15,10 +15,11 @@ function Home() {
             ANA MARIA <br />  <span className="dev-surname"> SAUCIUC</span> <br />
 
           </h1>
-          <h2><Typed></Typed></h2>
+      
 
-
+          <h2 className="mt-5 typed"><Typed></Typed></h2>
         </div>
+       
 
       </section>
     </React.Fragment>

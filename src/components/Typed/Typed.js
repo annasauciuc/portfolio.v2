@@ -7,8 +7,8 @@ const Typeed  =()=> {
     return (
       <Typed
       strings={[
-        "I'm Web Developer",
-        "I'm passionate about technology",
+        "I'm a Web Developer",
+        "I'm passionate about responsive design",
         ]}
         typeSpeed={40}
         backSpeed={50}

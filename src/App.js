@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import 'aos/dist/aos.css';
 import "./App.css";
 import Layout from "./components/Layout/Layout";
 import HomePage from "./components/Home/Home";
@@ -19,7 +20,7 @@ function App() {
 
   return (
     <React.Fragment>
-      <div class="">
+      <div className="">
         <BrowserRouter>
           <Layout>
             <Switch>

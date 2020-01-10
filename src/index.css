@@ -22,9 +22,19 @@ body {
   font-family: "Roboto", sans-serif;
   line-height: 1.65;
   color: #e1e1e1;
-  background-color: #6b6c6d;
+  background-color:rgb(46, 46, 46);
 }
 .wrapper {
-  /* display: flex; */
-  /* width: 100%; */
+  /* display: flex; 
+   width: 100%; */
+   font-family: "Playfair Display", serif;
+   overflow-y: scroll;
+   height: 100vh;
+   width: calc(100% - 200px);
 }
+@media only screen and (max-width: 768px) {
+  .wrapper {
+    width: 100%;
+  }
+}
+/* #1ab394; */

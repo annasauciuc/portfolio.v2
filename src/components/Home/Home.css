@@ -1,14 +1,14 @@
 #home {
-  background: url("./images/app.png") no-repeat top center;
+  background: url("./images/click.jpg") no-repeat top center;
   position: relative;
   background-size: cover;
-  display: flex;
+  /* display: flex; */
   /* justify-content: center;
   align-items: center; */
   color: rgb(41, 39, 39);
   overflow: hidden;
   height: 100vh;
-  width: calc(100% - 200px);
+
   /* background-color: rgba(0, 0, 0, 0.51); */
   z-index: -1;
 }
@@ -19,8 +19,11 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #181818;
-  opacity: 0.5;
+  background-color: #000000;
+  opacity: 0.8;
+}
+.typed{
+  margin-top: 50px;
 }
 .dev-name {
   font-family: "Playfair Display", serif;

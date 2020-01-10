@@ -6,7 +6,7 @@ const Layout = props => {
     <>
       <Navigation />
       
-      <div class="wrapper">
+      <div className="wrapper ml-auto">
 
       {props.children}
       </div>

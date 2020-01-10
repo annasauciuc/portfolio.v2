@@ -3,7 +3,7 @@ function Resume() {
   return (
     <React.Fragment>
       <section
-        data-aos="fade-down"
+    data-aos="fade-right"
         id="home"
         class="banner-section ml-auto col pt-page page-active"
         data-simplebar="init"
