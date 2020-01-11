@@ -2,13 +2,14 @@ import React from "react";
 import "./Navigation.css";
 import { Link, Route, NavLink } from "react-router-dom";
 import Footer from "./../Footer/Footer";
-import personalImg from "./images/personalImg.jpg";
+import personalImg from "./images/ana.jpg";
 import favicon from "./images/favicon.png";
 function Navigation() {
   return (
     <React.Fragment>
       <div className="nav-side-menu">
-        <div className="logo d-md-block  d-none d-xl-block d-lg-block ">
+        <div className="logo d-md-block position-relative  d-none d-xl-block d-lg-block ">
+        <h2 className="header-name text-center m-0" style={{whiteSpace: "nowrap" , display: "inline-block", fontSize: "20px"}}>Ana Sauciuc</h2>
           <img src={personalImg} width="100%" alt="personal image" />
         </div>
         <div className="logo d-md-none d-none d-xs-block d-sm-block  ">
@@ -41,7 +42,7 @@ function Navigation() {
             >
               <Link
                 activeclassName="active"
-                className="nav-link"
+                className="nav-link hoverLine"
                 to={{ pathname: "/about" }}
               >
                 ABOUT ME
@@ -55,7 +56,7 @@ function Navigation() {
             >
               <Link
                 activeclassName="active"
-                className="nav-link"
+                className="nav-link hoverLine"
                 to={{ pathname: "/resume" }}
               >
                 RESUME
@@ -65,7 +66,7 @@ function Navigation() {
             <li data-toggle="collapse" data-target="#new" className="collapsed">
               <Link
                 activeclassName="active"
-                className="nav-link"
+                className="nav-link hoverLine"
                 to={{ pathname: "/portfolio" }}
               >
                 PORTFOLIO
@@ -75,7 +76,7 @@ function Navigation() {
             <li>
               <Link
                 activeclassName="active"
-                className="nav-link"
+                className="nav-link hoverLine"
                 to={{ pathname: "/contact" }}
               >
                 CONTACT

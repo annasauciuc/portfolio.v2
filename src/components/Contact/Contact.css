@@ -1,0 +1,48 @@
+#about {
+  background: url("./images/white-envelope.jpg") no-repeat top center;
+  position: relative;
+  background-size: cover;
+  /* display: flex; */
+  /* justify-content: center;
+    align-items: center; */
+  color: rgb(15, 15, 15);
+  height: 100%;
+
+  /* background-color: rgba(0, 0, 0, 0.51); */
+}
+.contact-title {
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
+}
+.social-text {
+  font-size: 1.1em;
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.3);
+}
+
+.hoverLine {
+  text-decoration: none;
+  color: black;
+  position: relative;
+}
+
+.hoverLine:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: #1ab394;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.hoverLine:hover:before {
+  text-decoration: none;
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+  color: black;
+}
